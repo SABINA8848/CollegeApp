@@ -7,13 +7,13 @@ namespace CollegeApp.Model
         [Required]
         public int User_Id { get; set; }
         [Required]
-        public string? User_Name { get; set; }
+        public string User_Name { get; set; } = "";
         [Required]
-        public string? User_Email { get; set; }
+        public string User_Email { get; set; } = "";
         [Required]
-        public string? Password_Hash { get; set; }
+        public string Password_Hash { get; set; } = "";
         [Required]
-        public DateTime? Created_At { get; set; }
+        public DateTime Created_At { get; set; }
 
     }
 }

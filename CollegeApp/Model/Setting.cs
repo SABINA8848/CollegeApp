@@ -4,14 +4,14 @@ namespace CollegeApp.Model
 {
     public class Setting
     {
-        [Required]
+        
         public int Setting_Id { get; set; }
-        [Required]
+       
         public int User_Id { get; set; }
-        [Required]
-        public string? Theme { get; set; }
-        [Required]
-        public string? Notification { get; set; }
+
+        public string Theme { get; set; } = "";
+        
+        public string Notification { get; set; } = "";
 
     }
 }

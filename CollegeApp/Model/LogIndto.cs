@@ -2,15 +2,15 @@
 
 namespace CollegeApp.Model
 {
-    public class LogIn
+    public class LogIndto
     {
-       
+        [Required]
         public int Login_id { get; set; }
-      
+        [Required]
         public int User_Id { get; set; }
-       
-        public string Status { get; set; } = "";
-       
+        [Required]
+        public string? Status { get; set; }
+        [Required]
         public DateTime Login_Time { get; set; }
     }
 }
