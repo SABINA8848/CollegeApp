@@ -1,13 +1,11 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
-namespace Contact.Controllers
+namespace CollegeApp.Controllers
 {
-    [Authorize] // Requires authentication
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("api/reports")]
-    public class ReportsController : ControllerBase
+    public class ContactController : ControllerBase
     {
         private static List<string> reports = new List<string>(); // Simulated in-memory storage
 
@@ -63,6 +61,7 @@ namespace Contact.Controllers
 
             reports.RemoveAt(id);
             return NoContent();
-        }
+        
     }
+}
 }

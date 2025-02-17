@@ -7,7 +7,7 @@ namespace CollegeApp.Model
         [Required]
         public int Registration_Id { get; set; }
         [Required]
-        public int User_Id { get; set; }
+        public int User_Id { get; set; }  
         [Required]
         public int Course_Id { get; set; }
         [Required]
